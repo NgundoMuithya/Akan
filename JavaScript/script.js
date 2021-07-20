@@ -6,3 +6,6 @@ var birthYear = prompt("Enter the year you were born in: ")
 var century = parseInt(birthYear.slice(0, 2))
 var year = parseInt(birthYear.slice(2, 4))
 var birthMonth = prompt("Enter the month you were born in: ")
+var month = months.indexOf(birthMonth.toLowerCase())
+
+
