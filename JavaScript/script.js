@@ -14,4 +14,7 @@ if (gender === true) {
     var akanName = maleAkanNames[indexofAkanName]
     alert("Your Akan name is " + akanName + ".")
 }
-
+if (gender === false) {
+    var akanName = femaleAkanNames[indexofAkanName]
+    alert("Your Akan name is " + akanName + ".")
+}
