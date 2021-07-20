@@ -9,4 +9,9 @@ var month = months.indexOf(birthMonth.toLowerCase())
 var birthDay = prompt("On which day of that month were you born e.g. If born on the 14th enter '14': ")
 var day = parseInt(birthDay)
 var gender = confirm("Are you male? (Hit OK if 'yes' and Cancel if 'no'): ")
-var indexofAkanName = (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day)
+var indexofAkanName = (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7
+if (gender === true) {
+    var akanName = maleAkanNames[indexofAkanName]
+    alert("Your Akan name is " + akanName + ".")
+}
+
