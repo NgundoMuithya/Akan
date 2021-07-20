@@ -15,7 +15,7 @@ while (consent === true) {
     }
     else {
         var gender = confirm("Are you male? (Hit OK if 'yes' and Cancel if 'no'): ")
-        var indexofAkanName = ((((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7).toFixed(0)
+        var indexofAkanName = parseInt(((((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7).toString().slice(0, 1))
         if (gender) {
         var akanName = maleAkanNames[indexofAkanName]
         alert("Your Akan name is " + akanName + ".")
