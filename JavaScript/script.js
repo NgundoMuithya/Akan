@@ -8,5 +8,5 @@ var year = parseInt(birthYear.slice(2, 4))
 var birthMonth = prompt("Enter the month you were born in: ")
 var month = months.indexOf(birthMonth.toLowerCase())
 var birthDay = prompt("On which day of that month were you born e.g. If born on the 14th enter '14': ")
-
+var day = parseInt(birthDay)
 
