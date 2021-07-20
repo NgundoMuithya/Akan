@@ -19,11 +19,21 @@ function akanNameGenerator() {
             var indexofAkanName = parseInt(((((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7).toString().slice(0, 1))
             if (gender) {
                 var akanName = maleAkanNames[indexofAkanName]
-                alert("Your Akan name is " + akanName + ".")
+                if (typeof akanName === "undefined"){
+                    alert("You have entered invalid data somewhere along the way.")
+                }
+                else { 
+                    alert("Your Akan name is " + akanName + ".")
+                }    
             }
             else {
                 var akanName = femaleAkanNames[indexofAkanName]
-                alert("Your Akan name is " + akanName + ".")
+                if (typeof akanName === "undefined"){
+                    alert("You have entered invalid data somewhere along the way.")
+                }
+                else { 
+                    alert("Your Akan name is " + akanName + ".")
+                }    
             }
         }
         var consent = confirm("Do you wish to try again? (OK if 'yes' Cancel if 'no'): ")
